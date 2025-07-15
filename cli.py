@@ -10,5 +10,8 @@ def get_arguments():
                         choices = ["@","#","$","%","!","&","+"], nargs='+', default = None)
     parser.add_argument("--strength", "-strn", help = "see your password\'s strength", action = "store_true")
     parser.add_argument("--password", "-pass", help = "enter a password to check it\'s strength")
+    parser.add_argument("--describe", "-db", help = "enter description for your password")
+    parser.add_argument("--view", "-v", help = "you can see your passwords and descriptions", action = "store_true")
+    parser.add_argument("--remove", "-rm", help = "you can remove a password you saved before.(enter number)", type = str)
 
     return parser.parse_args()

@@ -1,3 +1,9 @@
+# Installation
+
+First, install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 # Password Generator & Strength Checker
 
 A simple command-line tool to generate strong random passwords and save it and check password strength.
